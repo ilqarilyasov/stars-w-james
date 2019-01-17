@@ -28,6 +28,7 @@ class ViewController: UIViewController {
         
         starController.createStar(with: name, and: distance)
         listStars()
+        clearTextFields()
     }
     
     func listStars() {
@@ -36,6 +37,11 @@ class ViewController: UIViewController {
             output += "\(star.name) is \(star.distance) light years away.\n"
         }
         textView.text = output
+    }
+    
+    func clearTextFields() {
+        starNameTextField.text = nil
+        distanceLightYearsTextField.text = nil
     }
 }
 
