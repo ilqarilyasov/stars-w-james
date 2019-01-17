@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         textView.isEditable = false
+        listStars()
     }
     
     @IBAction func createButtonTapped(_ sender: Any) {
